@@ -1,5 +1,7 @@
 ![repository-open-graph-template (2)](https://user-images.githubusercontent.com/41279178/98071794-54ace500-1e86-11eb-8977-61140e40e358.png)
 
+![Platform - Android and iOS](https://img.shields.io/badge/platform-Android%20%7C%20iOS-blue.svg?style=for-the-badge)
+
 #Project Overview
  
 ## Technologies:
