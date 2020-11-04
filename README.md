@@ -16,4 +16,6 @@ React Native Food App With Firebase
   Atomic Design Pattern, Formik, Yup, React Navigation ( Stack, Drawer), React Native Icons, Firebase Auth, Firebase Firestore , Redux Thunk, React Redux, BEM naming methodology, React Hooks, JavaScript ES6, DRY and Single-responsibility principles
 
 # Author
-Jasur Kurbanov jasurkurbanovinit@gmail.com
+Jasur Kurbanov, 
+## Email
+jasurkurbanovinit@gmail.com
