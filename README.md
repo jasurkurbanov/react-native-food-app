@@ -15,3 +15,7 @@
 | Author                 | Jasur Kurbanov                                                                                                                      |
 
 
+# Components
+![Untitled (1)](https://user-images.githubusercontent.com/41279178/98203328-a40e1680-1f55-11eb-9768-00894e8bcab1.png)
+
+
