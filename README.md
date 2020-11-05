@@ -17,5 +17,5 @@
 
 # Components
 ![Untitled (1)](https://user-images.githubusercontent.com/41279178/98203328-a40e1680-1f55-11eb-9768-00894e8bcab1.png)
-
+![Untitled (2)](https://user-images.githubusercontent.com/41279178/98203579-1e3e9b00-1f56-11eb-980a-60be45f024ed.png)
 
