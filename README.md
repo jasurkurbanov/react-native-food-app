@@ -3,7 +3,7 @@
 
 # Project Overview
 
-| Project                |  Description                                                                                                                        |
+| Project                |  Technologies                                                                                                                        |
 | -----------------------| ----------------------------------------------------------------------------------------------------------------------------------- |
 | Front                  | React Native                                                                                                                        |
 | Backend                | Firebase                                                                                                                            |
