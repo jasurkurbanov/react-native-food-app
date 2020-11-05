@@ -18,3 +18,5 @@
 # Components
 ![Untitled (1)](https://user-images.githubusercontent.com/41279178/98203328-a40e1680-1f55-11eb-9768-00894e8bcab1.png)
 ![Untitled (3)](https://user-images.githubusercontent.com/41279178/98204063-2519dd80-1f57-11eb-9d9b-db68a17ae801.png)
+
+The components can be found inside the `ui-kit` branch. [Direct link](https://github.com/jasurkurbanovinit/react-native-food-app/tree/ui-kit/src/components) to the components  
