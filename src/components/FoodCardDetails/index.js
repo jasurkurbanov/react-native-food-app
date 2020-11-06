@@ -25,7 +25,9 @@ export const FoodCardDetails = ({foodImg, foodPrice, foodDesc}) => {
 
 const styles = StyleSheet.create({
   container: {
+    width: W - 30,
     height: W - 10,
+    alignSelf: 'center',
     paddingTop: 10,
   },
   card__header: {

@@ -3,7 +3,7 @@ import {StyleSheet, Pressable, View} from 'react-native';
 import {Text} from './../Text';
 import {W} from './../../constants';
 import {colors} from './../../colors';
-export const Counter = ({onAdd, onSub, count = 'Hello'}) => {
+export const Counter = ({onAdd, onSub, count}) => {
   const {counter, counter__button, counter__text} = styles;
   return (
     <View style={counter}>
@@ -11,7 +11,7 @@ export const Counter = ({onAdd, onSub, count = 'Hello'}) => {
         <Text title={'-'} h14 gray bold />
       </Pressable>
       <View style={counter__text}>
-        <Text title={'2'} gray />
+        <Text title={count} gray />
       </View>
       <Pressable style={counter__button}>
         <Text title={'+'} h14 gray bold />

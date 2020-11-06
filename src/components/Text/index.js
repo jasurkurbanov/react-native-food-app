@@ -10,6 +10,7 @@ const Text = memo(
     h14,
     h16,
     h18,
+    h20,
     h24,
     h30,
     height = 20,
@@ -21,6 +22,7 @@ const Text = memo(
     thin = false,
     white = false,
     gray = false,
+    black = false,
     primary = false,
     upper = false,
     center = false,
@@ -34,6 +36,7 @@ const Text = memo(
       h14__style,
       h16__style,
       h18__style,
+      h20__style,
       h24__style,
       h30__style,
     } = styles;
@@ -50,6 +53,7 @@ const Text = memo(
           h14 && StyleSheet.flatten(h14__style),
           h16 && StyleSheet.flatten(h16__style),
           h18 && StyleSheet.flatten(h18__style),
+          h20 && StyleSheet.flatten(h20__style),
           h24 && StyleSheet.flatten(h24__style),
           h30 && StyleSheet.flatten(h30__style),
           bold && {fontFamily: 'Poppins-Bold'},
@@ -58,6 +62,7 @@ const Text = memo(
           italic && {fontFamily: 'Poppins-Italic'},
           thin && {fontFamily: 'Poppins-Thin'},
           white && {color: colors.white},
+          black && {color: colors.black},
           primary && {color: colors.primary},
           gray && {color: colors.border},
           upper && {textTransform: 'uppercase'},
@@ -87,6 +92,9 @@ const styles = ScaledSheet.create({
   },
   h18__style: {
     fontSize: '18@ms',
+  },
+  h20__style: {
+    fontSize: '20@ms',
   },
   h24__style: {
     fontSize: '24@ms',

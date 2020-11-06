@@ -13,7 +13,7 @@ export const FoodBanner = ({imgUrl, text}) => {
 };
 
 const styles = StyleSheet.create({
-  imgContainer: {width: '100%', height: 180, justifyContent: 'flex-end'},
+  imgContainer: {width: '100%', height: 200, justifyContent: 'flex-end'},
   textContainer: {
     backgroundColor: 'rgba(52,52,52,0.6)',
     paddingHorizontal: 20,

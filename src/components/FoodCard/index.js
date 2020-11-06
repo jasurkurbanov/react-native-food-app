@@ -29,7 +29,7 @@ export const FoodCard = ({
       </View>
       <View style={box2}>
         <View style={box2__title}>
-          <Text title={foodName} h18 bold />
+          <Text title={foodName} h18 bold lines={1} />
           <Text title={foodDesc} h12 lines={1} />
         </View>
         <Text title={`$ ${foodPrice}`} h18 primary bold style={box2__price} />
@@ -49,11 +49,12 @@ export const FoodCard = ({
 
 const styles = StyleSheet.create({
   container: {
-    width: W - 50,
+    width: W - 30,
     alignSelf: 'center',
     flexDirection: 'row',
     height: 80,
     justifyContent: 'space-between',
+    marginTop: 20,
   },
   box1: {
     width: '25%',
