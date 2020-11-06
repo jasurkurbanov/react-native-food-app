@@ -1,5 +1,5 @@
-import React from 'react';
-import {Image, TouchableOpacity, StyleSheet, View} from 'react-native';
+import React, {useState} from 'react';
+import {Image, Pressable, StyleSheet, View} from 'react-native';
 import {Text} from './../Text';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {colors} from '../../colors';
@@ -13,19 +13,20 @@ export const OrderCart = ({
   foodPrice,
   likesCount,
 }) => {
+  const [count, setCount] = useState(0);
   const {container, box1, box1__img, box2, box3} = styles;
   return (
     <View style={container}>
       <View style={box1}>
         <Image source={{uri: foodImg}} style={box1__img} resizeMode="cover" />
       </View>
-      <View style={box2}>
+      <Pressable style={box2}>
         <Text title={foodName} h18 bold />
-        <Counter title={foodDesc} h12 lines={1} />
-      </View>
-      <View style={box3}>
+        <Counter title={foodDesc} h12 lines={1} count={count} />
+      </Pressable>
+      <Pressable style={box3}>
         <Text title={`$ ${25}`} h24 bold primary height={60} />
-      </View>
+      </Pressable>
     </View>
   );
 };

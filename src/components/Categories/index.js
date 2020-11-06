@@ -1,37 +1,52 @@
 import React from 'react';
-import {Image, StyleSheet, View} from 'react-native';
+import {Image, TouchableOpacity, StyleSheet, View} from 'react-native';
 import {Text} from '../Text';
 import {colors} from '../../colors';
-
-export const Categories = ({foodName, foodDesc, foodImg}) => {
+import {W} from './../../constants';
+import {useNavigation} from '@react-navigation/native';
+export const Categories = ({
+  cuisineName,
+  cuisineDesc,
+  cuisineImg,
+  routeName,
+  data,
+}) => {
+  const navigation = useNavigation();
+  const onNavigate = () => navigation.navigate(routeName, {data});
   return (
-    <View style={styles.container}>
+    <TouchableOpacity style={styles.container} onPress={onNavigate}>
       <View style={styles.container2}>
-        <Image source={{uri: foodImg}} style={styles.img} resizeMode="cover" />
+        <Image
+          source={{uri: cuisineImg}}
+          style={styles.img}
+          resizeMode="contain"
+        />
       </View>
       <View style={styles.textBox}>
-        <Text title={foodName} h24 bold />
-        <Text title={foodDesc} h14 lines={2} />
+        <Text title={cuisineName} h20 bold height={40} />
+        <Text title={cuisineDesc} h14 lines={2} />
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    width: '100%',
+    width: W - 30,
+    alignSelf: 'center',
     height: 100,
     flexDirection: 'row',
     justifyContent: 'space-between',
-    borderWidth: 2,
+
     borderColor: colors.borderPrimary,
     borderBottomLeftRadius: 20,
     borderTopRightRadius: 20,
     backgroundColor: colors.white,
-    elevation: 4,
+    elevation: 8,
+    marginTop: 20,
   },
   container2: {
-    width: '35%',
+    width: '30%',
   },
   img: {
     width: '100%',
@@ -41,7 +56,7 @@ const styles = StyleSheet.create({
     borderBottomRightRadius: 20,
   },
   textBox: {
-    width: '60%',
+    width: '65%',
     justifyContent: 'center',
     borderTopRightRadius: 20,
     backgroundColor: colors.white,
